@@ -1,0 +1,29 @@
+/* Custom CSS for the blog post */
+body {
+    background-color: #727474!important;
+}
+
+.container {
+    background-color: #fff; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+h2, h3 {
+    color: #343a40; 
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    body{
+        background-color: rgb(243, 174, 235)!important;
+    }
+}
+
+@media(min-width : 992px) {
+    body{
+        background-color: rgb(135, 177, 228)!important;
+    }
+}
+
+ 
