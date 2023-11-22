@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fictional Clothing Store</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body{
+        background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+
+    <!-- Navigation with Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Gillz Clothing Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#Item1">Item 1</a>
+                        <a class="dropdown-item" href="#Item2">Item 2</a>
+                    </div>
+                </li>
+            </ul>
+            <!-- Search Bar -->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Header with Bootstrap colors -->
+    <header class="bg-secondary text-white text-center py-3">
+        <h1>Gurmandeep Kaur</h1>
+    </header>
+    
+
+    <main>
+        <!-- About Section with Bootstrap scrollspy -->
+        <section class="container mt-4">
+            <nav id="navbar-example2" class="navbar bg-body-tertiary bg-success p-3 mb-3">
+                <a class="navbar-brand text-dark" href="#">About Us</a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading1">First</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                    </li>
+                </ul>
+            </nav>
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+                data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0" id="about">
+                <h4 id="scrollspyHeading1">Section 1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum voluptatem molestiae doloribus soluta. Possimus sunt ab neque facilis fugit architecto eum non delectus, cupiditate vel voluptas esse, maxime molestiae!</p>
+              
+           
+       
+
+        <!-- Product Display using Bootstrap card -->
+       
+            <h2 id="shop">Products</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="product1.jpg" class="card-img-top p-3" alt="Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 1</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac justo sed.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="Item1" >
+                    <div class="card">
+                        <img src="product2.jpg" class="card-img-top p-3" alt="Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 2</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac justo sed.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="Item2">
+                    <div class="card">
+                        <img src="product3.jpg" class="card-img-top p-3" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Product 3</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac justo sed.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 id="scrollspyHeading2">Section 2</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum voluptatem molestiae doloribus soluta. Possimus sunt ab neque facilis fugit architecto eum non delectus, cupiditate vel voluptas esse, maxime molestiae!</p>
+            </div>
+        </section>
+
+        <div class="col p-3 m-3 bg-success" id="contact">
+        <h3 class="">Contact</h3>
+            <ul >
+                <li>E-Mail:gillz@shop.com</li>
+                <li>Phone Number: 1234567890</li>
+                <li>instagram: @gillzshop</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-center text-white p-3">
+        &copy; 2023 Gillz Clothing Store. All rights reserved. 
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js (required for Bootstrap JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
