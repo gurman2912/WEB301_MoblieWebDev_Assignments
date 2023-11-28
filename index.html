@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Inventory Information</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header class="mt-4 p-3 text-center bg-success">
+        <h1>Gurmandeep Kaur</h1>
+    </header>
+
+    <!-- Image Section -->
+    <div class="row">
+        <div class="col-md-12 mt-4 bg-light">
+            <img src="iphone.jpg" alt="Electronic Product" class="img-fluid mt-3">
+            <p class="mt-2 text-center">
+                When it comes to purchasing a new iPhone, there's no better place to buy than Apple. For all your questions about carrier support, payment options and getting your new iPhone set up, we have all the answers you need.</p>
+        </div>
+    </div>
+
+    <!-- Table Section -->
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <table class="table table-hover table-info">
+                <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>iPhone 14 pro</td>
+                    <td>$1300</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>iPhone 14 pro max</td>
+                    <td>$1500</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>iPhone 15 pro</td>
+                    <td>$1600</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>iPhone 15 pro max</td>
+                    <td>$2000</td>
+                    <td>3</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    
+
+    <!-- Form Section for Small Devices -->
+        <div class="col-md-6 order-sm-first">
+            <form class="mt-4 p-3 bg-light">
+                <div class="form-group">
+                    <label for="productName">Product Name</label>
+                    <select class="form-select" aria-label="Default select example" id="productName">
+                        <option selected>Open this select product</option>
+                        <option>iPhone 14 pro</option>
+                        <option>iPhone 15 pro max</option>
+                        <option>iPhone 15 pro</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Would you like to order</label>
+                    <div class="custom-control custom-switch">
+                        <input type="checkbox" class="custom-control-input" id="orderSwitch">
+                        <label class="custom-control-label" for="orderSwitch"></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity</label>
+                    <input type="range" class="form-control-range" id="quantity" min="1" max="10">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
